@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1><i>Welcome to jQuery!</i></h1>
+     <h2></h2>
+     <p id="para">Welcome to the Page</p>
+     <p class="first">Welcome to the next page</p>
+     <button>Click me</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    // $(document).ready(function(){
+    //      alert("Welcome to jQuery!!")
+    //  })
+      //callback function
+    //  $(function(){
+    //       alert("Welcome to jQuery!!")
+    //  })
+      //arrow function
+      //$(()=>{
+      //  alert("Welcome to jQuery!!")
+      //})
+      //anonymous function
+      //myfunction=function(){
+      //  alert("Welcome to jQuery!!")
+      //}
+      //$(myfunction)
+    //using .text() //: it shows only text items
+    
+    //   $(function(){
+    //     $('button').click(function(){
+    //         let name=$('h1').text();
+    //         alert(name);
+    //     })
+    //   })
+    
+    //using .html() : it shows the content with html tags<i></i>
+    
+    // $(function(){
+    //     $('button').click(function(){
+    //         let name=$('h1').html();
+    //         alert(name);
+    //     })
+    //   })
+    
+    //when using id
+    
+    //  $(function(){
+    //     $('button').click(function(){
+    //         let name=$('#para').text();
+    //         alert(name);
+    //     })
+    //   })
+    
+    //when using class
+    
+     $(function(){
+        $('button').click(function(){
+            let name=$('.first').text();
+            alert(name);
+        })
+      })
+    
+    </script>
+</body>
+</html>
