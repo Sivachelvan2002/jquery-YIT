@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <label for="num1">Num 1 :</label>
+        <input type="number" name="num1" id="num1"><br /><br />
+        <label for="num2">Num 2 :</label>
+        <input type="number" name="num2" id="num2"><br /><br />
+        <div>
+            <button id="add"> + </button>
+            <button id="sub"> - </button>
+            <button id="mul"> * </button>
+            <button id="div"> / </button>
+            <button id="mod"> % </button><br /><br />
+        </div>
+        <div>
+            <label for="output">Output :</label>
+            <input type="text" id="output" name="output">
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#add').click(function () {
+                let num1 = Number($('#num1').val());
+                let num2 = Number($('#num2').val());
+                let add = num1 + num2;
+                $('#output').val(add);
+            });
+            $('#sub').click(function () {
+                let num1 = Number($('#num1').val());
+                let num2 = Number($('#num2').val());
+                let sub = num1 - num2;
+                $('#output').val(sub);
+            });
+            $('#mul').click(function () {
+                let num1 = Number($('#num1').val());
+                let num2 = Number($('#num2').val());
+                let mul = num1 * num2;
+                $('#output').val(mul);
+            });
+            $('#div').click(function () {
+                let num1 = Number($('#num1').val());
+                let num2 = Number($('#num2').val());
+                let div = num1 / num2;
+                $('#output').val(div);
+            });
+            $('#mod').click(function () {
+                let num1 = Number($('#num1').val());
+                let num2 = Number($('#num2').val());
+                let mod = num1 % num2;
+                $('#output').val(mod);
+            });
+        });
+    </script>
+</body>
+</html>
